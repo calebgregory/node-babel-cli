@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:server": "babel . --ignore node_modules --out-dir dist"
+    "compile:server": "rm -rf ./dist/*; babel . --ignore {node_modules,dist} --out-dir dist"
   },
   "repository": {
     "type": "git",
