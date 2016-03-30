@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:server": "if [ ! -d $PWD/dist ]; then mkdir $PWD/dist; fi; rm -rf ./dist/*; babel . --ignore {node_modules,dist} --out-dir dist"
+    "compile:server": "if [ ! -d $PWD/dist ]; then mkdir $PWD/dist; fi; rm -rf ./dist/*; npm install --production --prefix ./dist/node_modules -g; babel . --ignore {node_modules,dist} --out-dir dist"
   },
   "repository": {
     "type": "git",
